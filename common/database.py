@@ -4,7 +4,7 @@ import pymongo
 
 
 class Database:
-    URI = "mongodb://127.0.0.1:27017/fullstack"
+    URI = "mongodb+srv://arthur1234:password1234@cluster0.d9idm.mongodb.net/pricing?retryWrites=true&w=majority"
     DATABASE = pymongo.MongoClient(URI).get_default_database()
 
     @staticmethod
