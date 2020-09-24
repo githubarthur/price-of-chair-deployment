@@ -4,7 +4,7 @@ import pymongo
 
 
 class Database:
-    URI = os.environ.get('MONGODB_URI',None)
+    URI = "mongodb://127.0.0.1:27017/fullstack"
     DATABASE = pymongo.MongoClient(URI).get_default_database()
 
     @staticmethod
